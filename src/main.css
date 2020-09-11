@@ -1,0 +1,25 @@
+.button-group{
+    display: inline-block;
+}
+canvas{
+    display: block;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+.interact-area{
+    display: block;
+    width: 412px;
+    margin: 10px auto;
+}
+.user-info{
+    width: 500px;
+    margin: 10px auto;
+}
+button {
+    width: 100px;
+    border: 2px solid black;
+    font-size: 30pt;
+    color: blue;
+    background-color: transparent;
+    cursor: pointer;
+}
