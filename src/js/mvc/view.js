@@ -2,9 +2,6 @@ import {model} from "./model.js";
 
 
 let view = {
-    mes: function(){
-        alert()
-    },
     loadApp: function () {
         model.createCanvas();
         model.createShape();
