@@ -16,8 +16,9 @@ let model = {
             height: model.appData.height,
             transparent: true,});
 
-        const container = new PIXI.Container();
-        model.app.stage.addChild(container);
+        model.container = new PIXI.Container();
+        
+        model.app.stage.addChild(model.container);
 
         const graphics = new PIXI.Graphics();
         graphics.beginFill(0x000000);
@@ -31,7 +32,7 @@ let model = {
             const {x, y} = data.global;
             model.createShape(x, y)
         });
-        container.addChild(graphics);
+        model.container.addChild(graphics);
 
         document.getElementById('canvasWrapper').appendChild(model.app.view);
     },
