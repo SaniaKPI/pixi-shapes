@@ -3,8 +3,9 @@ import {view} from "./view.js";
 
 let controller = {
     clearFigure:  function() {
-        this.clear();
         model.app.ticker.remove(this.fallDown);
+        model.container.removeChild(this);
+        this.destroy();
         model.appData.figuresAmount--;
         model.appData.totalSquare -= this.square;
         view.displayUpdatingData();
